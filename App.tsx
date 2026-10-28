@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import {
   Alert,
+  AppState,
   BackHandler,
   Pressable,
   ScrollView,
@@ -172,7 +173,7 @@ const SERIES_DATA: Series[] = [
         description:
           'Investigative exposé detailing the nexus between Narendra Modi and Gautam Adani, charting airport privatizations, Mundra port concessions, regulatory waivers, and banking exposure that built the corporate empire.',
         thumbnail:
-          'https://raw.githubusercontent.com/Uncensored-dev/Azaad/main/assets/friendship_files_thumb.jpg',
+          'https://raw.githubusercontent.com/Uncensored-dev/Azaad/main/assets/friendship_files_thumb.jpg?v=shadow_citizens',
         embedUrl:
           'https://mega.nz/embed/yaY33LoZ#Jvjb5OSjvAgcXu5ruLNjWM03kQWXiP8kPhRjvJ_-LIo',
         censorshipReason:
@@ -212,6 +213,7 @@ const DECOY_DOC = {
 
 // Endpoints
 const CLOUDFLARE_RELAY_URL = 'https://soft-glade-bb8e.aniversesbs.workers.dev';
+const CLOUDFLARE_CONTENT_URL = 'https://soft-glade-bb8e.aniversesbs.workers.dev/content.json';
 const GITHUB_RAW_CONTENT_URL =
   'https://raw.githubusercontent.com/Uncensored-dev/Azaad/main/content.json';
 
@@ -294,23 +296,51 @@ export default function App() {
     activeFilter,
   ]);
 
-  // Sync archive dynamically from GitHub Raw
+  // Real-time zero-cache dynamic archive synchronization
   const syncArchiveFromNetwork = async (showFeedback = false) => {
     try {
       setIsSyncing(true);
-      const res = await fetch(GITHUB_RAW_CONTENT_URL, {
-        headers: { 'Cache-Control': 'no-cache' },
-      });
-      if (res.ok) {
-        const data = await res.json();
-        if (data && Array.isArray(data.series) && data.series.length > 0) {
-          setSeriesList(data.series);
-          setLastSyncTime(
-            new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-          );
-          if (showFeedback) {
-            Alert.alert('Archive Synchronized', 'Loaded latest verified investigative mirrors.');
+      const timestamp = Date.now();
+      let data: any = null;
+
+      // Primary: Fetch from Cloudflare worker proxy (0s edge cache)
+      try {
+        const cfRes = await fetch(`${CLOUDFLARE_CONTENT_URL}?t=${timestamp}`, {
+          headers: { 'Cache-Control': 'no-cache, no-store' },
+        });
+        if (cfRes.ok) {
+          const parsed = await cfRes.json();
+          if (parsed && Array.isArray(parsed.series) && parsed.series.length > 0) {
+            data = parsed;
           }
+        }
+      } catch {
+        // Fall back to GitHub raw
+      }
+
+      // Fallback: Fetch directly from GitHub raw with cache-buster
+      if (!data || !Array.isArray(data.series)) {
+        const ghRes = await fetch(`${GITHUB_RAW_CONTENT_URL}?nocache=${timestamp}`, {
+          headers: { 'Cache-Control': 'no-cache' },
+        });
+        if (ghRes.ok) {
+          const parsed = await ghRes.json();
+          if (parsed && Array.isArray(parsed.series) && parsed.series.length > 0) {
+            data = parsed;
+          }
+        }
+      }
+
+      if (data && Array.isArray(data.series) && data.series.length > 0) {
+        setSeriesList(data.series);
+        setLastSyncTime(
+          new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        );
+        if (showFeedback) {
+          Alert.alert(
+            'Archive Synchronized',
+            'Loaded latest verified investigative mirrors in real time.'
+          );
         }
       }
     } catch {
@@ -324,6 +354,14 @@ export default function App() {
 
   useEffect(() => {
     syncArchiveFromNetwork(false);
+
+    // Auto-refresh dynamically whenever app returns to foreground
+    const sub = AppState.addEventListener('change', (nextState) => {
+      if (nextState === 'active') {
+        syncArchiveFromNetwork(false);
+      }
+    });
+    return () => sub.remove();
   }, []);
 
   // Filter series based on user selection and search query

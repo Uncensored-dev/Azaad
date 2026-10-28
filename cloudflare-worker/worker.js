@@ -213,6 +213,33 @@ export default {
         return Response.redirect(LATEST_APK_URL, 302);
       }
 
+      // Real-time Content Proxy (Zero-cache dynamic JSON for instant mobile updates)
+      if (pathname === "/content.json" || pathname === "/content") {
+        try {
+          const contentRes = await fetch(
+            `https://raw.githubusercontent.com/Uncensored-dev/Azaad/main/content.json?nocache=${Date.now()}`,
+            {
+              headers: {
+                "User-Agent": "Azaad-Relay",
+                "Cache-Control": "no-cache",
+              },
+            }
+          );
+          if (contentRes.ok) {
+            const jsonText = await contentRes.text();
+            return new Response(jsonText, {
+              headers: {
+                "Content-Type": "application/json; charset=utf-8",
+                "Cache-Control": "no-store, no-cache, must-revalidate",
+                ...corsHeaders,
+              },
+            });
+          }
+        } catch (e) {
+          // fallback
+        }
+      }
+
       // Serve web download landing page
       return new Response(LANDING_HTML, {
         headers: {
