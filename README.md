@@ -1,9 +1,40 @@
 # AZAAD (आज़ाद) — Decentralized Free Speech & Truth Archive
 
-> **Decentralized, censorship-resilient documentary streaming client preserving public interest journalism, investigative reporting, and freedom of speech.**
+<div align="center">
+
+# 🦇 AZAAD (v1.0.0)
+### Censorship-Resilient Investigative Documentary Archive for Android
+
+[![Direct Download APK](https://img.shields.io/badge/📲_Direct_Download_APK-v1.0.0_(21.9_MB)-2ea44f?style=for-the-badge&logo=android&logoColor=white)](https://github.com/Uncensored-dev/Azaad/releases/download/v1.0.0/AZAAD-v1.0.0.apk)
+[![All Releases](https://img.shields.io/badge/📦_GitHub_Releases-v1.0.0-blue?style=for-the-badge&logo=github)](https://github.com/Uncensored-dev/Azaad/releases)
+[![Direct Mirror](https://img.shields.io/badge/⚡_Short_Link-Direct_Download-f59e0b?style=for-the-badge)](https://soft-glade-bb8e.aniversesbs.workers.dev/apk)
+
+<br/>
+
+### 📱 Scan with Phone Camera to Download Instantly:
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/Uncensored-dev/Azaad/releases/download/v1.0.0/AZAAD-v1.0.0.apk" alt="Download QR Code" width="180" height="180" />
+
+<br/>
+
+**[👉 Click Here to Download AZAAD-v1.0.0.apk (Direct APK Download)](https://github.com/Uncensored-dev/Azaad/releases/download/v1.0.0/AZAAD-v1.0.0.apk)**
+
+</div>
+
+---
+
+### 📥 Easy 3-Step Installation Guide (Android):
+1. **Download APK**: Tap the green button above on your Android phone (or scan the QR code).
+2. **Open Download**: When the file finishes downloading, tap **Open** (or tap the notification in your notification tray).
+3. **Allow & Install**: If prompted by Android (*"For your security, your phone is not allowed to install unknown apps from this source"*):
+   - Tap **Settings**
+   - Toggle **Allow from this source** ON
+   - Tap **Install**
+> *AZAAD is 100% open-source, contains zero telemetry or trackers, and requires no special system permissions.*
+
+---
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Web-green.svg)](https://expo.dev)
+[![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://github.com/Uncensored-dev/Azaad/releases)
 [![Freedom of Speech](https://img.shields.io/badge/Free%20Speech-Article%2019(1)(a)-red.svg)](#constitutional--legal-basis)
 [![Decentralized Mirrors](https://img.shields.io/badge/Mirrors-Active%20%26%20Encrypted-brightgreen.svg)](#available-series--mirrors)
 
@@ -13,7 +44,7 @@
 
 **AZAAD** is a lightweight, censorship-resistant mobile application built to provide direct, unblockable public access to landmark investigative documentaries subjected to emergency blocking orders under Section 69A of India's Information Technology Act and the IT Rules 2021.
 
-When governments issue emergency takedown orders to YouTube, Twitter/X, and social media platforms, public interest journalism often disappears from public view. DocuStream uses decentralized cloud mirrors (including Mega.nz and independent video CDNs) inside a secure WebView wrapper to ensure continuous access to crucial historical and political records.
+When governments issue emergency takedown orders to YouTube, Twitter/X, and social media platforms, public interest journalism often disappears from public view. AZAAD uses decentralized cloud mirrors (including Mega.nz and independent video CDNs) inside a secure WebView wrapper to ensure continuous access to crucial historical and political records.
 
 ---
 
