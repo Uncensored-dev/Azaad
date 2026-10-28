@@ -67,14 +67,14 @@ When governments issue emergency takedown orders to YouTube, Twitter/X, and soci
 
 ---
 
-### 2. **Modi & Adani: The Friendship Files** *(Investigative Exposé Series)*
-*In-depth investigative documentary by independent financial and investigative journalists.*
+### 2. **The Friendship Files: How Modi and Adani Stole India** *(Shadow Citizens Investigation)*
+*Investigative documentary by Hotmail co-founder Sabeer Bhatia and Shadow Citizens.*
 
-- **Part 1: How Modi and Adani Stole India: The Friendship Files (48 min, 2023)**
-  - **Summary**: Investigative breakdown exposing the crony-capitalist nexus between Narendra Modi and Gautam Adani. Explores privatized airport tenders, coal import contracts, environmental clearances, and state banking favoritism that propelled the conglomerate.
-  - **Thumbnail**: Unsplash Investigative Archive
+- **Full Feature: The Friendship Files: How Modi and Adani Stole India (36 min, 2024)**
+  - **Summary**: Investigative breakdown examining the 20-year corporate-political alliance between Narendra Modi and Gautam Adani. Explores privatized airport tenders, coal import contracts, environmental clearances, and port concessions that propelled the conglomerate, which was subsequently banned under a Calcutta High Court injunction.
+  - **Thumbnail**: Key Art Archive (`assets/friendship_files_thumb.jpg`)
   - **Stream Mirror**: `https://mega.nz/embed/yaY33LoZ#Jvjb5OSjvAgcXu5ruLNjWM03kQWXiP8kPhRjvJ_-LIo`
-  - **Key Topics**: Crony Capitalism, Airport Privatization, Hindenburg Audit, Port Monopolies, Parliamentary Record Expungement.
+  - **Key Topics**: Crony Capitalism, Adani Empire, Airport Privatization, Mundra Port, Calcutta High Court Injunction.
 
 ---
 
