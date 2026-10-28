@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-28T09:00:00Z",
+  "archiveName": "AZAAD Truth Archive",
+  "series": [
+    {
+      "id": "modi-question",
+      "title": "India: The Modi Question",
+      "badge": "BBC Two Investigation",
+      "investigator": "British Broadcasting Corporation",
+      "year": "2023",
+      "statusBadge": "Banned in India (IT Rules 2021)",
+      "summary": "The landmark two-part BBC documentary investigating the political rise of Narendra Modi, the 2002 Gujarat riots, the Jack Straw diplomatic dossier, and the subsequent crackdowns on media and civil liberties.",
+      "keywords": [
+        "india the modi question",
+        "the modi question",
+        "the modi question episode 1",
+        "the modi question episode 2",
+        "bbc documentary modi",
+        "bbc narendra modi",
+        "bbc documentary banned in india",
+        "gujarat riots 2002",
+        "godhra train burning",
+        "jack straw uk foreign office",
+        "supreme court sit",
+        "article 370 kashmir",
+        "citizenship amendment act caa nrc",
+        "press freedom india",
+        "delhi riots 2020",
+        "section 69a it act",
+        "it rules 2021 rule 16",
+        "emergency blocking order",
+        "bbc iplayer download mega link",
+        "watch modi question online free",
+        "modi documentary github mirror",
+        "uncensored bbc documentary",
+        "watch bbc documentary without vpn in india"
+      ],
+      "episodes": [
+        {
+          "id": "mq-ep1",
+          "seriesId": "modi-question",
+          "seriesTitle": "India: The Modi Question",
+          "episodeNumber": 1,
+          "partLabel": "Episode 1",
+          "title": "Episode 1: The Narendra Modi Story & Gujarat Inquiries",
+          "duration": "59 min",
+          "year": "2023",
+          "description": "Traces Narendra Modi's political ascent in Gujarat and reveals an unpublished British diplomatic report on the 2002 communal violence, featuring interviews with UK diplomats and eyewitnesses.",
+          "thumbnail": "https://media.themoviedb.org/t/p/w1066_and_h600_face/WcJZ5BXEBgqSKCYrPU0AJlEtuP.jpg",
+          "embedUrl": "https://mega.nz/embed/Df4gmQbK#EwWnbH2GcotGnEL1TQkchtxTgMvMJHSSgvGsqDRo1Xk",
+          "censorshipReason": "Banned via emergency orders under Rule 16 of the IT Rules 2021 and Section 69A of the IT Act.",
+          "topics": ["2002 Gujarat Riots", "Jack Straw Dossier", "Supreme Court SIT"],
+          "keywords": [
+            "the modi question episode 1 free download",
+            "bbc documentary episode 1 streaming mega nz",
+            "modi gujarat 2002 investigation full video"
+          ]
+        },
+        {
+          "id": "mq-ep2",
+          "seriesId": "modi-question",
+          "seriesTitle": "India: The Modi Question",
+          "episodeNumber": 2,
+          "partLabel": "Episode 2",
+          "title": "Episode 2: Re-election, Article 370 & Media Crackdowns",
+          "duration": "59 min",
+          "year": "2023",
+          "description": "Examines the 2019 re-election of Narendra Modi, the revocation of Jammu & Kashmir's special status under Article 370, the Citizenship Amendment Act protests, and growing pressure on independent journalists and activists.",
+          "thumbnail": "https://media.themoviedb.org/t/p/w1066_and_h600_face/WcJZ5BXEBgqSKCYrPU0AJlEtuP.jpg",
+          "embedUrl": "https://mega.nz/embed/aThkhJzK#7p29eJ_Xz19WkZt5Fv8_6mR2kP4z3f0bA7l8c9q5z1Y",
+          "censorshipReason": "Targeted by emergency takedown notices to Twitter (X) and YouTube ordering total removal.",
+          "topics": ["Article 370 Kashmir", "CAA-NRC Protests", "Press Freedom Index"],
+          "keywords": [
+            "the modi question episode 2 watch online",
+            "bbc modi documentary part 2 mega nz mirror",
+            "article 370 documentary bbc banned",
+            "caa nrc protests delhi riots coverage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modi-friendship",
+      "title": "Modi & Adani: The Friendship Files",
+      "badge": "Independent Investigation",
+      "investigator": "Investigative Journalism Collective",
+      "year": "2023",
+      "statusBadge": "Censored & Expunged",
+      "summary": "Deep dive investigative reporting exploring the thirty-year relationship between Narendra Modi and Gautam Adani, documenting preferential airport and port concessions, regulatory exemptions, SEZ land allocations, and the aftermath of the Hindenburg Research allegations.",
+      "keywords": [
+        "modi adani documentary",
+        "the friendship files modi adani",
+        "gautam adani narendra modi crony capitalism",
+        "hindenburg adani report documentary",
+        "mundra port concessions",
+        "adani airports privatization scam",
+        "parliament speech rahul gandhi expunged adani",
+        "crony capitalism in india",
+        "free speech adani investigative report",
+        "watch the friendship files",
+        "banned adani documentary online"
+      ],
+      "episodes": [
+        {
+          "id": "mf-ep1",
+          "seriesId": "modi-friendship",
+          "seriesTitle": "Modi & Adani: The Friendship Files",
+          "episodeNumber": 1,
+          "partLabel": "Episode 1",
+          "title": "Episode 1: The Oligarch Ascendance & Regulatory Favors",
+          "duration": "48 min",
+          "year": "2023",
+          "description": "Chronicles the parallel rise of Gautam Adani alongside Narendra Modi's tenure as Chief Minister and Prime Minister, uncovering the public sector banking exposure, land acquisition privileges, and international diplomatic deal-brokering.",
+          "thumbnail": "https://media.themoviedb.org/t/p/w1066_and_h600_face/8pj7pYmN3d1j3m3N8y6x7.jpg",
+          "embedUrl": "https://mega.nz/embed/yaY33LoZ#Jvjb5OSjvAgcXu5ruLNjWM03kQWXiP8kPhRjvJ_-LIo",
+          "censorshipReason": "Parliamentary records addressing this nexus were expunged and reports faced takedown orders.",
+          "topics": ["Crony Capitalism", "Airports & Ports", "State Regulatory Favors"],
+          "keywords": [
+            "how modi and adani stole india full documentary",
+            "the friendship files part 1",
+            "modi adani friendship files watch",
+            "adani group crony capitalism video",
+            "hindenburg report documentary"
+          ]
+        }
+      ]
+    }
+  ]
+}
