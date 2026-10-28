@@ -20,7 +20,11 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:apk": "cd android && .\\gradlew.bat assembleRelease",
+    "release": "node scripts/publish-release.mjs",
+    "auto-release": "cd android && .\\gradlew.bat assembleRelease && cd .. && node scripts/publish-release.mjs",
+    "anon-push": "node scripts/anon-push.mjs"
   },
   "private": true
 }

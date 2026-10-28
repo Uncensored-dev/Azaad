@@ -31,7 +31,11 @@ yarn-error.*
 *.pem
 
 # local env files
-.env*.local
+.env*
+.env
+
+# workflow directory (requires special token scope)
+.github/
 
 # typescript
 *.tsbuildinfo

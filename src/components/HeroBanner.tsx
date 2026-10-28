@@ -78,7 +78,11 @@ const styles = StyleSheet.create({
     resizeMode: 'cover',
   },
   gradient: {
-    ...StyleSheet.absoluteFill,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
     backgroundColor: 'rgba(10, 10, 14, 0.72)',
   },
   content: {
